@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Translation</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Translation Request</h1>
+
+        <form id="translationForm">
+            <label for="input_text">Text to translate:</label>
+            <textarea id="input_text" required rows="4" cols="50"></textarea>
+            <br><br>
+            
+            <label for="target_languages">Target Languages (comma separated):</label>
+            <input type="text" id="target_languages" required>
+            <br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Translations:</h2>
+        <div id="translations"></div>
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
